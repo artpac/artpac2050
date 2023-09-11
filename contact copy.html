@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Artur Photography</title>
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+
+    <style>
+        body{
+            background-image: url('Pictures/DSC_3650.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+            
+        }
+
+        
+        .title{
+            margin: 150px;
+        }
+
+        form{
+            display: block;
+            text-align: center;
+            width:fit-content ;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.7) ;
+            border-radius: 40px;
+            backdrop-filter: blur(1px);
+            
+            color:#7c7979;
+        }
+        br{
+            line-height:20px;
+        }
+        
+        #message{
+            width: 300px;
+            height: 100px;
+            resize: none;
+        }
+
+        @media only screen and (max-width: 600px){
+            .title{
+                margin: 50px;
+            }
+
+            form{
+                width: 90%;
+                margin: 20% auto;
+                padding: 10px
+            }
+
+            #message{
+                width: 90%
+            }
+        }
+
+    </style>
+
+    <script>
+
+        function removePlaceholder(){
+            var photoshoot = document.getElementById("photoshoot");
+            var placeholderOption = photoshoot.querySelector('option[disabled]');
+            placeholderOption.remove();
+        }
+
+        document.addEventListener("DOMContentLoaded", function(){
+            var dropdown = document.getElementById("photoshoot");
+                dropdown.value = "";
+        });
+
+    </script>
+
+    </head>
+
+
+    <body>
+
+        <div class="title">
+            <h1>Website coming soon</h1>
+            <h2>Contact me for a photoshoot</h2>
+        </div>
+
+
+
+
+        <form method="post" action="contact.php">
+
+            <fieldset>
+                <legend>Name</legend>
+                <input type="text" id="name" name="name" placeholder="First" required>
+
+                <input type="text" id="name" name="name" placeholder="Last" required>
+            </fieldset>
+
+            <br>
+            
+            <input type="email" id="email" name="email"  size="25" placeholder="Email" required>
+
+            <br><br>
+            
+                <select id="photoshoot" name="photoshoot"  onclick="removePlaceholder()" required>
+                    <option value="" disabled selected>Type of photoshoot</option>
+                    <option value="Car">Car</option>
+                    <option value="Business">Business</option>
+                    <option value="Product">Product</option>
+                    <option value="Portrait">Portrait</option>
+                    <option value="Other">Other</option>
+              </select>
+
+              <br><br>
+
+            <textarea id="message" name="message" placeholder="Type message here" required></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+
+
+    </body>
+
+
+
+</html>
