@@ -102,7 +102,7 @@ h1{
 }
 
 
-#pictureCarousel{
+#imageContainer{
     background-color: #bbb;
     height: 600px;
     max-width: auto;
@@ -110,7 +110,7 @@ h1{
     overflow: auto;
     white-space: nowrap;
 }
-#pictureCarousel img{
+#imageContainer img{
     height:350px;
     padding:20px;
     margin-top :75px;
