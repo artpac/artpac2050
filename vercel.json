@@ -1,1 +1,3 @@
-cleanUrls = True;
+{
+    "cleanUrls": true;
+}
