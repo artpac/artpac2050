@@ -184,7 +184,7 @@ br{
     resize: none;
 }
 
-@media only screen and (max-width: 600px){
+.contact {@media only screen and (max-width: 600px){
     .title{
         margin: 50px;
     }
@@ -199,5 +199,5 @@ br{
         width: 90%
     }
 }
-
+}
 
