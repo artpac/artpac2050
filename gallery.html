@@ -27,11 +27,10 @@
                         <i class="random"></i>
                     </a>
                     <div class="dropdownContent">
-                        <a href="">Nature</a>
-                        <a href="">Street</a>
-                        <a href="">Car</a>
-                        <a href="">Landmarks</a>
-                        <a href="">Trips</a>
+                        <a href="gallery.html#natureGrid">Nature</a>
+                        <a href="gallery.html#streetGrid">Street</a>
+                        <a href="gallery.html#carsGrid">Car</a>
+                        <a href="gallery.html#landmarkGrid">Landmarks</a>
                     </div>
                 </div>
             </ul>
@@ -40,14 +39,13 @@
 
         <div id ="content">
 
-            <p style="height: 20px;"></p>
         
             <div id="selection">
 
                 <div class="responsive">
                     <div class="gallery">
-                        <a href="">
-                            <img src="Pictures/DSC_1005.jpg" alt="Cinque Terre">
+                        <a href="#natureGrid">
+                            <img src="Pictures/DSC_1005.jpg">
                         </a>
                     <div class="desc">Nature</div>
                     </div>
@@ -55,8 +53,8 @@
     
                 <div class="responsive">
                     <div class="gallery">
-                        <a href="">
-                            <img src="Pictures/DSC_6309.jpg" alt="Cinque Terre">
+                        <a href="#streetGrid">
+                            <img src="Pictures/DSC_6309.jpg">
                         </a>
                     <div class="desc">Street</div>
                     </div>
@@ -64,8 +62,8 @@
     
                 <div class="responsive">
                     <div class="gallery">
-                        <a href="">
-                            <img src="Pictures/Cars/DSC_3712-Edit.jpg" alt="Cinque Terre">
+                        <a href="#carsGrid" onclick="carsGridScroll()">
+                            <img src="Pictures/DSC_3727-Edit.jpg">
                         </a>
                     <div class="desc">Cars</div>
                     </div>
@@ -80,22 +78,39 @@
                     </div>
                 </div>
         
-                <div class="responsive">
-                    <div class="gallery">
-                        <a href="">
-                          <img src="Pictures/DSC_9818.jpg" alt="Cinque Terre">
-                        </a>
-                    <div class="desc">Trips</div>
-                    </div>
+            </div>
+        </div>
+
+
+        <div id="content">
+            <hr>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Possimus dolorem hic ipsam harum repellat corrupti sequi,
+                 soluta, ipsum voluptas natus sint iste excepturi amet necessitatibus earum debitis, 
+                 doloremque illo? Debitis.</p>
+
+
+            <div id="Grid">
+                <div id="natureGrid">
+                    <img src="Pictures/DSC_1513.jpg">
+                    <img src="Pictures/DSC_1696.jpg">
+                    <img src="Pictures/DSC_9818.jpg">
+                </div>
+            
+                <div id="streetGrid">
+                    <img src="Pictures/DSC_6309.jpg">
+                    <img src="Pictures/DSC_6014.jpg">
+                    <img src="Pictures/DSC_9846.jpg">
+                </div>
+
+                <div id="carsGrid">
+                    <img src="Pictures/DSC_3740-Edit.jpg">
+                    <img src="Pictures/DSC_3755-Edit.jpg">
+                    <img src="Pictures/DSC_3643-Edit.jpg">
                 </div>
             </div>
 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis obcaecati tenetur nesciunt molestias dolorum voluptatum laborum exercitationem! Quae esse vero officia, ea tempora nihil minima delectus doloremque, dolor placeat cum.
-            </p>
-
-
         </div>
-
         <footer>
             <div id="footerLinks">
                 <a href="https://www.linkedin.com/in/artpac2050/"><img src="Logo/linkedinLogo.png"></a>
@@ -113,6 +128,5 @@
     
         </footer>
     </body>
-
 
 </html>

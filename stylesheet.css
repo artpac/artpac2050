@@ -4,7 +4,8 @@
     border: 0;
     box-sizing: border-box;
     line-height: 1.5;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -42,6 +43,14 @@ a{
 p{
     padding: 10px;
 }
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+  }
 
 
 /* Start of navbar css */
@@ -109,6 +118,16 @@ p{
 }
 /* End of navbar css */
 
+#Top h2{
+
+    font-size: 100px;
+
+    
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.7) ;
+    backdrop-filter: blur(1px);
+    
+}
+
 
 h2{
     text-align: center;
@@ -147,13 +166,15 @@ h1{
     background-color: #bbb;
     margin-top: 0;
 }
+
+/* Gallery Page */
 #selection{
     background-color: #bbb;    
 }
 
 .responsive{
     float: left;
-    width: 15%;
+    width: 20%;
     margin: 2.5%;
 
 }
@@ -172,10 +193,24 @@ div.gallery {
     text-align: center;
 }
 
+#Grid img{
+    width: auto;
+    height: 350px;
+    float: 50%;
+}
+
+#Grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+  }
+
+/* End of Gallery Page */
 
 
 
-Contact Page
+/* Contact Page */
 .title{
     margin: 150px;
 }
@@ -193,9 +228,7 @@ form{
     
     color:#7c7979;
 }
-br{
-    line-height:10px;
-}
+
 
 #message{
     width: 300px;
@@ -219,4 +252,4 @@ br{
     }
 }
 }
-
+/* End of Contact Page */

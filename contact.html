@@ -3,10 +3,9 @@
 <html>
 
     <head>
-
-        <title>ARTPAC2050</title>
-        <meta name="viewport" content="width-device-width, initial-scale-1.0">
         <link rel="stylesheet" href="stylesheet.css">
+        <title>ARTPAC2050</title>
+        
 
     <style>
         body{
@@ -14,33 +13,35 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-attachment: fixed;            
+            background-attachment: fixed;           
         }
     </style>
 
     </head>
 
 
-    <body class = "contact">
+    <body>
+        <div class="contact">
             <br><br>
             <a href ="index.html"><h1>ARTPAC2050</h1></a>
 
             <ul id="navBar">
                 <li><a href="contact.html">Contact</a></li>
+                
                 <div class="dropdown">
                     <li><a href="gallery.html">Gallery</li>
                         <i class="random"></i>
                     </a>
                     <div class="dropdownContent">
-                        <a href="">Nature</a>
-                        <a href="">Street</a>
-                        <a href="">Car</a>
-                        <a href="">Landmarks</a>
-                        <a href="">Trips</a>
+                        <a href="gallery.html#natureGrid">Nature</a>
+                        <a href="gallery.html#streetGrid">Street</a>
+                        <a href="gallery.html#carsGrid">Car</a>
+                        <a href="gallery.html#landmarkGrid">Landmarks</a>
                     </div>
                 </div>
-                <!-- <li><a href="">About</a></li>                 -->
             </ul>
+        </div>
+
         <br><br><br>
 
         <div class="title">
@@ -50,7 +51,7 @@
         <br><br>
 
 
-        <form>
+        <form POST="contact.php">
 
             <fieldset>
                 <legend>Name</legend>
@@ -80,7 +81,7 @@
 
             <br><br>
 
-            <input type="submit" value="Submit" href="mailto:artpac2050@gmail.com">
+            <input type="submit" value="Submit">
 
         </form>
 
