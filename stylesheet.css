@@ -212,10 +212,11 @@ div.gallery {
 
 /* Contact Page */
 .title{
-    margin: 150px;
+    margin-top: 100px;
+    margin-bottom: 75px;
 }
 
-.contactInfo{
+#contactInfo{
     display: block;
     text-align: center;
     width:fit-content ;
@@ -226,7 +227,10 @@ div.gallery {
     border-radius: 40px;
     backdrop-filter: blur(1px);
     
-    color:#7c7979;
+    color:white;
+}
+#contactInfo a{
+    color: white;
 }
 
 
