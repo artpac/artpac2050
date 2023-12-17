@@ -169,16 +169,7 @@ h1{
 }
 
 /* Gallery Page */
-#selection{
-    background-color: #bbb;    
-}
 
-.responsive{
-    float: left;
-    width: 20%;
-    margin: 2.5%;
-
-}
 div.gallery { 
     width:auto;
     border: 1px solid #777;
@@ -190,38 +181,20 @@ div.gallery {
 }
 
 
-#Grid img{
+#picturesGrid img{
     width: auto;
     height: 350px;
-    float: 50%;
+    padding: 10px 15px;
+    left: 50%;
 }
 
-#Grid {
+
+#picturesGrid {
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
-
-  }
-
-.row {
-    display: -ms-flexbox; /* IE 10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE 10 */
-    flex-wrap: wrap;
-    padding: 0 14px;
-    text-align: center;
+    justify-content: center;
 }
-  
-  /* Create two equal columns that sits next to each other */
-  .column {
-    flex: 50%;
-    padding: 0 14px;
-  }
-  
-  .column img {
-    margin-top: 14px;
-    vertical-align: middle;
-  }
 
 /* End of Gallery Page */
 
